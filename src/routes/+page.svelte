@@ -15,21 +15,21 @@ let navItems = [
     </script>
  
  
-<body>
+<body class="ml-0 mr-0 xl:ml-12 xl:mr-12">
   
   <Grid>
     <Grid.Col span={12} >
       <Navbar class ="w-full bg-black-800 "fluid={true} >
-        <h1 class="text-lg sm:text-lg lg:text-3xl xl:text-4xl xl:m-5 md:m-3 sm:m-3 lg:m-3 ">
+        <h1 class="text-lg sm:text-lg lg:text-3xl xl:text-4xl extra:text-5xl xl:m-5 md:m-3 sm:m-3 lg:m-3 ">
           <span class="color1">Back</span><span class="color2">packk</span>
         </h1>  
         <NavHamburger  />
         <NavUl>
-          <NavLi class="text-lg lg:text-base text-white" href="/">Home</NavLi>
-          <NavLi class="text-lg lg:text-base text-white" href="/about">About</NavLi>
-          <NavLi class="text-lg lg:text-base text-white" href="/docs/components/navbar">Navbar</NavLi>
-          <NavLi class="text-lg lg:text-base text-white" href="/pricing">Pricing</NavLi>
-          <NavLi class="text-lg lg:text-base text-white" href="/contact">Contact</NavLi>
+          <NavLi class="text-lg lg:text-base xl:text-xl extra:2xl text-white" href="/">Home</NavLi>
+          <NavLi class="text-lg lg:text-base xl:text-xl extra:2xle text-white" href="/about">About</NavLi>
+          <NavLi class="text-lg lg:text-base xl:text-xl extra:2xl text-white" href="/docs/components/navbar">Navbar</NavLi>
+          <NavLi class="text-lg lg:text-base xl:text-xl extra:2xl text-white" href="/pricing">Pricing</NavLi>
+          <NavLi class="text-lg lg:text-base xl:text-xl extra:2xl text-white" href="/contact">Contact</NavLi>
         </NavUl>
       </Navbar>
       </Grid.Col>
@@ -181,26 +181,73 @@ let navItems = [
      <h1 class="mt-32 text-2xl sm:text-lg md:text-2xl lg:text-2xl xl:text-3xl extra:text-5xl font-sans text-white"> What Our Users Say </h1>
     </div>
   </Grid.Col>
-  <Grid.Col xs={12} sm={6} md={6} lg={4} xl={4}> 
-    <div class=" mt-5 w-full  md:h-36 lg:h-40 xl:h-44 extra:h-64 flex items-center align-middle justify-center ">
+  <Grid.Col xs={12} sm={6} md={6} lg={6} xl={6}> 
+    <div class=" mt-5 w-full h-40 md:h-40 lg:h-40 xl:h-36 extra:h-64 flex items-center align-top justify-center ">
      <div class=" m-5 w-full h-full border flex-col align-middle items-center justify-center border-black bg-[#2C3036]">
-       <div class="mt-8 flex align-middle items-center justify-center w-full">
-         <h1 class="ml-3 sm:text-md md:text-base lg:text-lg xl:text-xl extra:text-3xl text-white"> 
-          Multi-Destination Support
-          </h1>
-         </div>
-         <div class="mt-3 w-full h-2/4  flex flex-col  items-center align-middle justify-center ">
+       
+         <div class=" w-full h-3/4  flex flex-col  items-center align-middle justify-center ">
            
-           <h2 class="mb-6 md:text-sm lg:text-base xl:text-lg extra:text-2xl ml-3 mr-3 text-[#9CA3AF] text-center">
+           <h2 class=" md:text-sm lg:text-base xl:text-lg extra:text-3xl ml-4 mr-3 text-[#9CA3AF] text-left">
             Plan complex trips with ease, whether you're hopping cities or countries, we've got you covered every step of the way.               </h2>
            </div>
+           <div class=" flex align-top items-start justify-start w-full ">
+            <h1 class="ml-4 sm:text-xs md:text-xs lg:text-sm xl:text-sm extra:text-2xl text-[#FF830F]"> 
+             Multi-Destination Support
+             </h1>
+            </div>
        
        
        </div>  
        
    </div>
   </Grid.Col>
+  <Grid.Col xs={12} sm={6} md={6} lg={6} xl={6}> 
+    <div class=" mt-5 w-full h-40 md:h-40 lg:h-40 xl:h-36 extra:h-64 flex items-center align-top justify-center ">
+     <div class=" m-5 w-full h-full border flex-col align-middle items-center justify-center border-black bg-[#2C3036]">
+       
+         <div class=" w-full h-3/4  flex flex-col  items-center align-middle justify-center ">
+           
+           <h2 class=" md:text-sm lg:text-base xl:text-lg extra:text-3xl ml-4 mr-3 text-[#9CA3AF] text-left">
+            Plan complex trips with ease, whether you're hopping cities or countries, we've got you covered every step of the way.               </h2>
+           </div>
+           <div class=" flex align-top items-start justify-start w-full ">
+            <h1 class="ml-4 sm:text-xs md:text-xs lg:text-sm xl:text-sm extra:text-2xl text-[#FF830F]"> 
+             Multi-Destination Support
+             </h1>
+            </div>
+       
+       
+       </div>  
+       
+   </div>
+  </Grid.Col>
+  <Grid.Col class ="sm={12} md={12} xs={12} lg={12} xl={12}">
+    <div class="flex w-full justify-center">
+       <h1 class="mt-32 text-2xl sm:text-lg md:text-2xl lg:text-2xl xl:text-3xl extra:text-5xl font-sans text-white"> Frequently Asked Questions </h1>
+      </div>
+    </Grid.Col>
+    <Grid.Col xs={12} sm={6} md={6} lg={6} xl={6}> 
+      <div class=" mt-5 w-full  md:h-36 lg:h-40 xl:h-44 extra:h-64 flex items-center align-middle justify-center ">
+       <div class=" m-5  w-full h-full border flex-col align-middle items-center justify-center border-black bg-[#2C3036]">
+         <div class="mt-8 ml-8 mr-8  flex align-middle items-start justify-start w-full ">
+         
+           <h1 class="text-left sm:text-md md:text-base lg:text-lg xl:text-xl extra:text-3xl text-white"> 
+            Interactive Map Integration
+           </h1>
+           </div>
+           <div class=" w-full h-3/4  flex flex-col   items-center align-middle justify-center   ">
+             
+             <h2 class="  mb-6 ml-8 mr-8 md:text-sm lg:text-base xl:text-lg extra:text-2xl  text-[#9CA3AF] text-left">
+              Visualize your travel plans with interactive maps, explore destinations, and efficiently plan out your adventure.         </div>
+         
+         
+         </div>  
+         
+     </div>
+    </Grid.Col>
     </Grid>
+
+   
     
 </body>
 
@@ -231,8 +278,8 @@ let navItems = [
 }
 
 body{
-    margin: 0;
-    padding: 0;
+    
+    padding-left: 20;
     font-family: Arial, sans-serif;
     background-color: #1B1B1B;
 
