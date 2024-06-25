@@ -6,6 +6,7 @@ export default {
     extend: {
       screens:{
           'extra': '2000px',
+      
       },
       colors: {
         // flowbite-svelte

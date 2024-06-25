@@ -1,46 +1,40 @@
-
-<script lang ="ts">
+<script>
 import { Grid, createStyles, theme } from '@svelteuidev/core';   
-import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
+import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Input } from 'flowbite-svelte';
 import {onMount}  from 'svelte';
 import "../app.css"
-let showMobileMenu = false;
-let navItems = [
-    { label: "Home", href: "/" },
-    { label: "About", href: "/about" },
-    { label: "Contact", href: "/contact" }
-  ];
-  const handleMobileIconClick = () => (showMobileMenu = !showMobileMenu);
-  let width;
-    </script>
+
+</script>
  
- 
-<body class="ml-0 mr-0 xl:ml-12 xl:mr-12">
+<Navbar let:NavContainer color="primary" class ="w-full bg-black-800 dark:bg-gray-900 "fluid={true} >
+  <NavContainer>
+
+  <h1 class="text-lg sm:text-lg lg:text-3xl xl:text-4xl extra:text-5xl  ">
+    <span class="color1">Back</span><span class="color2">packk</span>
+  </h1>  
+  <NavHamburger  class= "justify-end items-end"/>
+  <NavUl >
+    <NavLi class="text-lg lg:text-base xl:text-xl extra:2xl text-white" href="/">Home</NavLi>
+    <NavLi class="text-lg lg:text-base xl:text-xl extra:2xle text-white" href="/about">About</NavLi>
+    <NavLi class="text-lg lg:text-base xl:text-xl extra:2xl text-white" href="/docs/components/navbar">Navbar</NavLi>
+    <NavLi class="text-lg lg:text-base xl:text-xl extra:2xl text-white" href="/pricing">Pricing</NavLi>
+    <NavLi class="text-lg lg:text-base xl:text-xl extra:2xl text-white" href="/contact">Contact</NavLi>
+  </NavUl>
+</NavContainer>
+</Navbar>  
+
+<body class="w-full pl-5 pr-5 md:pl-6 md:pr-4 xl:pl-8 xl:pr-12 bg-[#1B1B1B]">
   
   <Grid>
-    <Grid.Col span={12} >
-      <Navbar class ="w-full bg-black-800 "fluid={true} >
-        <h1 class="text-lg sm:text-lg lg:text-3xl xl:text-4xl extra:text-5xl xl:m-5 md:m-3 sm:m-3 lg:m-3 ">
-          <span class="color1">Back</span><span class="color2">packk</span>
-        </h1>  
-        <NavHamburger  />
-        <NavUl>
-          <NavLi class="text-lg lg:text-base xl:text-xl extra:2xl text-white" href="/">Home</NavLi>
-          <NavLi class="text-lg lg:text-base xl:text-xl extra:2xle text-white" href="/about">About</NavLi>
-          <NavLi class="text-lg lg:text-base xl:text-xl extra:2xl text-white" href="/docs/components/navbar">Navbar</NavLi>
-          <NavLi class="text-lg lg:text-base xl:text-xl extra:2xl text-white" href="/pricing">Pricing</NavLi>
-          <NavLi class="text-lg lg:text-base xl:text-xl extra:2xl text-white" href="/contact">Contact</NavLi>
-        </NavUl>
-      </Navbar>
-      </Grid.Col>
+   
     
     <Grid.Col  sm={6} md={6} xs={12} lg={6} xl={6}>
-      <div class= " w-full h-full align-middle">
-        <div class= " mt-9 sm:ml-0 md:ml-5 lg:ml-6 xl:ml-7">
+      <div class= " w-full h-full align-middle ">
+        <div class= " mt-24 ">
           <p class="text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl extra:text-8xl  text-white text-center sm:text-center md:text-left lg:text-left xl:text-left" > Crafting <br/> Unforgettable <br/> Journeys</p>  
           <p class="text-base sm:text-base md:text-base lg:text-lg xl:text-xl extra:text-3xl text-gray-400 text-center sm:text-center md:text-left lg:text-left xl:text-left mt-7"> Experience the joy of hassle-free travel <br/> planning with our AI itinerary builder.</p>
         </div>
-        <div class="sm:ml-0 md:ml-5 lg:ml-6 xl:ml-7 flex align-top items-center justify-center sm:flex sm:items-center sm:justify-center md:flex md:items-start md:justify-start">
+        <div class="flex align-top items-center justify-center sm:flex sm:items-center sm:justify-center md:flex md:items-start md:justify-start">
           <button class="object-scale-down py-3 px-5 sm:sm:px-5 sm:py-3 md:py-3 md:px-6 extra:py-5 extra:px-12 bg-[#FF830F] text-white rounded-xl mt-6 flex  text-sm sm:text-md md:text-lg extra:text-2xl"> Create Now </button>
   
           </div>
@@ -48,7 +42,7 @@ let navItems = [
       
     </Grid.Col>
     <Grid.Col  sm={6} md={6} xs={12} lg={6} xl={6} >
-      <div class=" w-full align-top items-start justify-end visible  md:flex hidden " >
+      <div class=" w-full flex-col align-top items-start justify-end visible  md:flex hidden " >
         <img class="image" src="/front.png" />
       </div>  
     </Grid.Col>
@@ -59,7 +53,7 @@ let navItems = [
     </Grid.Col>
     <Grid.Col xs={12} sm={6} md={6} lg={4} xl={4}> 
          <div class=" mt-5 w-full  md:h-36 lg:h-40 xl:h-44 extra:h-64 flex items-center align-middle justify-center ">
-          <div class=" m-5 w-full h-full border flex-col align-middle items-center justify-center border-black bg-[#2C3036]">
+          <div class=" m-5 ml-0 mr-0 rounded-lg w-full h-full border flex-col align-middle items-center justify-center border-black bg-[#2C3036]">
             <div class="mt-6 flex align-middle items-center justify-center w-full">
               <img class="ml-3 align-middle w-10 extra:size-1/12 md:w-8 " src='budget.png'>
               <h1 class="ml-3 sm:text-md md:text-base lg:text-lg xl:text-xl extra:text-3xl text-white"> 
@@ -80,7 +74,7 @@ let navItems = [
       </Grid.Col>
       <Grid.Col xs={12} sm={6} md={6} lg={4} xl={4}> 
         <div class=" mt-5 w-full  md:h-36 lg:h-40 xl:h-44 extra:h-64 flex items-center align-middle justify-center ">
-         <div class=" m-5 w-full h-full border flex-col align-middle items-center justify-center border-black bg-[#2C3036]">
+         <div class=" m-5 ml-0 mr-0 rounded-lg w-full h-full border flex-col align-middle items-center justify-center border-black bg-[#2C3036]">
            <div class="mt-6 flex align-middle items-center justify-center w-full">
              <img class="ml-3 align-middle w-10 extra:size-1/12 md:w-8 " src='time.png'>
              <h1 class="ml-3 sm:text-md md:text-base lg:text-lg xl:text-xl extra:text-3xl text-white"> 
@@ -100,7 +94,7 @@ let navItems = [
      </Grid.Col>
      <Grid.Col xs={12} sm={6} md={6} lg={4} xl={4}> 
       <div class=" mt-5 w-full  md:h-36 lg:h-40 xl:h-44 extra:h-64 flex items-center align-middle justify-center ">
-       <div class=" m-5 w-full h-full border flex-col align-middle items-center justify-center border-black bg-[#2C3036]">
+       <div class=" m-5 ml-0 mr-0 rounded-lg w-full h-full border flex-col align-middle items-center justify-center border-black bg-[#2C3036]">
          <div class="mt-6 flex align-middle items-center justify-center w-full">
            <img class="ml-3 align-middle w-10 extra:size-1/12 md:w-8 " src='customize.png'>
            <h1 class="ml-3 sm:text-md md:text-base lg:text-lg xl:text-xl extra:text-3xl text-white"> 
@@ -120,7 +114,7 @@ let navItems = [
    </Grid.Col>
    <Grid.Col xs={12} sm={6} md={6} lg={4} xl={4}> 
     <div class=" mt-5 w-full  md:h-36 lg:h-40 xl:h-44 extra:h-64 flex items-center align-middle justify-center ">
-     <div class=" m-5 w-full h-full border flex-col align-middle items-center justify-center border-black bg-[#2C3036]">
+     <div class=" m-5 ml-0 mr-0 rounded-lg w-full h-full border flex-col align-middle items-center justify-center border-black bg-[#2C3036]">
        <div class="mt-6 flex align-middle items-center justify-center w-full">
          <img class="ml-3 align-middle w-10 extra:size-1/12 md:w-8 " src='customize.png'>
          <h1 class="ml-3 sm:text-md md:text-base lg:text-lg xl:text-xl extra:text-3xl text-white"> 
@@ -139,7 +133,7 @@ let navItems = [
  </Grid.Col>
  <Grid.Col xs={12} sm={6} md={6} lg={4} xl={4}> 
   <div class=" mt-5 w-full  md:h-36 lg:h-40 xl:h-44 extra:h-64 flex items-center align-middle justify-center ">
-   <div class=" m-5 w-full h-full border flex-col align-middle items-center justify-center border-black bg-[#2C3036]">
+   <div class=" m-5 ml-0 mr-0 rounded-lg w-full h-full border flex-col align-middle items-center justify-center border-black bg-[#2C3036]">
      <div class="mt-6 flex align-middle items-center justify-center w-full">
        <img class="ml-3 align-middle w-10 extra:size-1/12 md:w-8 " src='customize.png'>
        <h1 class="ml-3 sm:text-md md:text-base lg:text-lg xl:text-xl extra:text-3xl text-white"> 
@@ -158,7 +152,7 @@ let navItems = [
 </Grid.Col>
 <Grid.Col xs={12} sm={6} md={6} lg={4} xl={4}> 
   <div class=" mt-5 w-full  md:h-36 lg:h-40 xl:h-44 extra:h-64 flex items-center align-middle justify-center ">
-   <div class=" m-5 w-full h-full border flex-col align-middle items-center justify-center border-black bg-[#2C3036]">
+   <div class=" m-5 ml-0 mr-0 rounded-lg w-full h-full border flex-col align-middle items-center justify-center border-black bg-[#2C3036]">
      <div class="mt-6 flex align-middle items-center justify-center w-full">
        <img class="ml-3 align-middle w-10 extra:size-1/12 md:w-8 " src='customize.png'>
        <h1 class="ml-3 sm:text-md md:text-base lg:text-lg xl:text-xl extra:text-3xl text-white"> 
@@ -183,7 +177,7 @@ let navItems = [
   </Grid.Col>
   <Grid.Col xs={12} sm={6} md={6} lg={6} xl={6}> 
     <div class=" mt-5 w-full h-40 md:h-40 lg:h-40 xl:h-36 extra:h-64 flex items-center align-top justify-center ">
-     <div class=" m-5 w-full h-full border flex-col align-middle items-center justify-center border-black bg-[#2C3036]">
+     <div class=" m-5 ml-0 mr-0 rounded-lg w-full h-full border flex-col align-middle items-center justify-center border-black bg-[#2C3036]">
        
          <div class=" w-full h-3/4  flex flex-col  items-center align-middle justify-center ">
            
@@ -203,7 +197,7 @@ let navItems = [
   </Grid.Col>
   <Grid.Col xs={12} sm={6} md={6} lg={6} xl={6}> 
     <div class=" mt-5 w-full h-40 md:h-40 lg:h-40 xl:h-36 extra:h-64 flex items-center align-top justify-center ">
-     <div class=" m-5 w-full h-full border flex-col align-middle items-center justify-center border-black bg-[#2C3036]">
+     <div class=" m-5 ml-0 mr-0 rounded-lg w-full h-full border flex-col align-middle items-center justify-center border-black bg-[#2C3036]">
        
          <div class=" w-full h-3/4  flex flex-col  items-center align-middle justify-center ">
            
@@ -228,8 +222,8 @@ let navItems = [
     </Grid.Col>
     <Grid.Col xs={12} sm={6} md={6} lg={6} xl={6}> 
       <div class=" mt-5 w-full  md:h-36 lg:h-40 xl:h-44 extra:h-64 flex items-center align-middle justify-center ">
-       <div class=" m-5  w-full h-full border flex-col align-middle items-center justify-center border-black bg-[#2C3036]">
-         <div class="mt-8 ml-8 mr-8  flex align-middle items-start justify-start w-full ">
+       <div class=" m-5 ml-0 mr-0 rounded-lg w-full h-full border flex-col align-middle items-center justify-center border-black bg-[#2C3036]">
+         <div class="mt-7 ml-8 mr-8  flex align-middle items-start justify-start w-full ">
          
            <h1 class="text-left sm:text-md md:text-base lg:text-lg xl:text-xl extra:text-3xl text-white"> 
             Interactive Map Integration
@@ -245,86 +239,71 @@ let navItems = [
          
      </div>
     </Grid.Col>
+    <Grid.Col xs={12} sm={6} md={6} lg={6} xl={6}> 
+      <div class=" mt-5 w-full  md:h-36 lg:h-40 xl:h-44 extra:h-64 flex items-center align-middle justify-center ">
+       <div class=" m-5 ml-0 mr-0 rounded-lg w-full h-full border flex-col align-middle items-center justify-center border-black bg-[#2C3036]">
+         <div class="mt-7 ml-8 mr-8  flex align-middle items-start justify-start w-full ">
+         
+           <h1 class="text-left sm:text-md md:text-base lg:text-lg xl:text-xl extra:text-3xl text-white"> 
+            Interactive Map Integration
+           </h1>
+           </div>
+           <div class=" w-full h-3/4  flex flex-col   items-center align-middle justify-center   ">
+             
+             <h2 class="  mb-6 ml-8 mr-8 md:text-sm lg:text-base xl:text-lg extra:text-2xl  text-[#9CA3AF] text-left">
+              Visualize your travel plans with interactive maps, explore destinations, and efficiently plan out your adventure.         </div>
+         
+         
+         </div>  
+         
+     </div>
+    </Grid.Col>
+   
     </Grid>
 
    
     
+
 </body>
+<footer class="mt-10 mb-3 pt-8 pb-4 w-full h-full rounded-md bg-[#2C3036]">
+  <div class=" w-4/4 grid gap-y-4 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 grid-rows-2 items-center justify-center align-middle ">
+    <div class="w-full flex sm:col-span-1 md:col-span-2 md:items-end md:justify-end sm:items-center sm:justify-center " >
+      <Input class="md:w-6/12 h-12 sm:12/12 bg-[#2C3036] border-gray-200 " type="text" id="first_name" placeholder="Enter your Email Address" required />   
+  
+    </div>
 
+    <div class="w-full col-span-1 flex items-center justify-center sm:items-center sm:justify-center md:items-start md:justify-start lg:items-start lg:justify-start xl:items-start xl:justify-start extra:items-start extra:justify-start ">
+      <button class="object-scale-down md:ml-7  bg-[#FF830F] text-white rounded-xl px-3 py-2 md:px-4 md:py-3 lg:px-5 lg:py-3 xl:px-6 xl:py-3    text-sm sm:text-sm md:text--base extra:text-xl"> Sign Me Up! </button> 
+      </div> 
+  </div>
+  <div class="w-full ">
+    <div class="flex items-center justify-center mt-10">
+      <img class="w-10 h-10" src="facebook.png" />
+      <img class="w-10 h-10 ml-7" src="x.png" />
+      <img class="w-10 h-10 ml-7" src="ins.png" />
+      <img class="w-10 h-10 ml-7" src="link.png" />
+    </div>  
+  </div>
+  <div class="w-full">
+    <div class="flex items-center space-x-5 justify-center mt-10">
+      <p class="text-white"> About </p>
+      <p class="text-white"> Contact </p>
+      <p class="text-white"> Services </p>
+      <p class="text-white"> Support </p>
+      <p class="text-white"> Privacy Policy </p>
+    </div>
+    </div>
+    <div class="w-full ">
+      <div class="flex items-center justify-center mt-10">
+        <p class="text-[#9CA3AF]"> © 2021 Backpackk. All rights reserved. </p>
+      </div>
 
+  </footer>
 
 
 <style lang="postcss">
- 
-.frontimg{
-  display: flex;
-  justify-content: end;
-}
-
-  .image{
-    width: 45vw;
-    max-width: 900px;
-    align-content: flex-start;
-  }
-
-.midtext {
-  font-size: 2.7vw;
-  color: #fff;
-}  
-.midsmalltext{
-  font-size: 1.3vw;
-  color: #9CA3AF;
-
-}
-
-body{
-    
-    padding-left: 20;
-    font-family: Arial, sans-serif;
-    background-color: #1B1B1B;
-
-}
 
 
-*{
-    border: none;
-    
-}
-.name{
-  padding-left: 5%;
-}    
-.navbar {
-   
-    background-color: #1B1B1B;
-   
-   
-
-    
-  
-  }
-  .nav-item {
-    text-decoration: none;
-    color: #fff;
-    padding-left: 3em;
-    padding-right: 3em;
-    justify-content: end;
-    
-  }
-  .nav-item:hover {
-    color: orange;
-  }
-
-
-.home{
-    display: Grid;
-    
-    padding: 0;
-    border: none;
-    height: 100vh;
-    width: 100%;
-    background-color: #1B1B1B;
-    font-family: Arial, sans-serif;
-}
 
 .color1 {
     color: white;
