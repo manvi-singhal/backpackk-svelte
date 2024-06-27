@@ -6,15 +6,15 @@ import "../app.css"
 
 </script>
  
-<Navbar let:NavContainer color="primary" class ="w-full bg-black-800 dark:bg-gray-900 "fluid={true} >
+<Navbar let:NavContainer color="dark"   class ="w-full bg-black-800 dark:bg-gray-900 "fluid={true} >
   <NavContainer>
 
   <h1 class="text-lg sm:text-lg lg:text-3xl xl:text-4xl extra:text-5xl  ">
     <span class="color1">Back</span><span class="color2">packk</span>
   </h1>  
-  <NavHamburger  class= "justify-end items-end"/>
+  <NavHamburger  class= "justify-end items-end " />
   <NavUl >
-    <NavLi class="text-lg lg:text-base xl:text-xl extra:2xl text-white" href="/">Home</NavLi>
+    <NavLi class="text-lg lg:text-base xl:text-xl extra:2xl text-black " href="/">Home</NavLi>
     <NavLi class="text-lg lg:text-base xl:text-xl extra:2xle text-white" href="/about">About</NavLi>
     <NavLi class="text-lg lg:text-base xl:text-xl extra:2xl text-white" href="/docs/components/navbar">Navbar</NavLi>
     <NavLi class="text-lg lg:text-base xl:text-xl extra:2xl text-white" href="/pricing">Pricing</NavLi>
@@ -284,13 +284,13 @@ import "../app.css"
       <img class="w-10 h-10 ml-7" src="link.png" />
     </div>  
   </div>
-  <div class="w-full">
+  <div class="w-full ">
     <div class="flex items-center space-x-5 justify-center mt-10">
-      <p class="text-white"> About </p>
-      <p class="text-white"> Contact </p>
-      <p class="text-white"> Services </p>
-      <p class="text-white"> Support </p>
-      <p class="text-white"> Privacy Policy </p>
+      <p class="text-white sm:text-sm md:text-base lg:text-lg "> About </p>
+      <p class="text-white sm:text-sm md:text-base"> Contact </p>
+      <p class="text-white sm:text-sm md:text-base"> Services </p>
+      <p class="text-white sm:text-sm md:text-base"> Support </p>
+      
     </div>
     </div>
     <div class="w-full ">
