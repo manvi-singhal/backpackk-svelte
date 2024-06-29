@@ -4,26 +4,10 @@ import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Input } from 'flowbite-sv
 import {onMount}  from 'svelte';
 import "../app.css"
 
+
 </script>
  
-<Navbar let:NavContainer color="dark"   class ="w-full bg-black-800 dark:bg-gray-900 "fluid={true} >
-  <NavContainer>
-
-  <h1 class="text-lg sm:text-lg lg:text-3xl xl:text-4xl extra:text-5xl  ">
-    <span class="color1">Back</span><span class="color2">packk</span>
-  </h1>  
-  <NavHamburger  class= "justify-end items-end " />
-  <NavUl >
-    <NavLi class="text-lg lg:text-base xl:text-xl extra:2xl text-black " href="/">Home</NavLi>
-    <NavLi class="text-lg lg:text-base xl:text-xl extra:2xle text-white" href="/about">About</NavLi>
-    <NavLi class="text-lg lg:text-base xl:text-xl extra:2xl text-white" href="/docs/components/navbar">Navbar</NavLi>
-    <NavLi class="text-lg lg:text-base xl:text-xl extra:2xl text-white" href="/pricing">Pricing</NavLi>
-    <NavLi class="text-lg lg:text-base xl:text-xl extra:2xl text-white" href="/contact">Contact</NavLi>
-  </NavUl>
-</NavContainer>
-</Navbar>  
-
-<body class="w-full pl-5 pr-5 md:pl-6 md:pr-4 xl:pl-8 xl:pr-12 bg-[#1B1B1B]">
+<body class="w-full pl-5 pr-5 md:pl-6 md:pr-4 xl:pl-8 xl:pr-12 pt-12  bg-[#1B1B1B]">
   
   <Grid>
    
@@ -299,6 +283,9 @@ import "../app.css"
       </div>
 
   </footer>
+
+
+
 
 
 <style lang="postcss">
