@@ -68,21 +68,21 @@
 			</Grid.Col>
 			<Grid.Col xs={12} sm={6} md={6} lg={4} xl={4}>
 				<FeatureCard
-					imgSrc="customize.png"
+					imgSrc="reliable.png"
 					title="Reliable Recommendations"
 					description="Trustworthy suggestions for accommodations and activities curated by travel experts for a stress-free journey."
 				/>
 			</Grid.Col>
 			<Grid.Col xs={12} sm={6} md={6} lg={4} xl={4}>
 				<FeatureCard
-					imgSrc="customize.png"
+					imgSrc="maps.png"
 					title="Interactive Map Integration"
 					description="Visualize your travel plans with interactive maps, explore destinations, and efficiently plan out your adventure."
 				/>
 			</Grid.Col>
 			<Grid.Col xs={12} sm={6} md={6} lg={4} xl={4}>
 				<FeatureCard
-					imgSrc="customize.png"
+					imgSrc="multidest.png"
 					title="Multi-Destination Support"
 					description="Plan complex trips with ease, whether you're hopping cities or countries, we've got you covered every step of the way."
 				/>

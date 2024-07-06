@@ -4,11 +4,10 @@
 
 <footer class="mt-10 h-full w-full rounded-md bg-gray-200 pb-4 pt-8">
 	<div
-		class=" mb-5 grid w-full grid-rows-1 items-center justify-center gap-y-1 align-middle sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3"
+		class=" mb-5 grid w-full grid-rows-1 items-center justify-center gap-y-4 align-middle sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3"
 	>
 		<div
-			class="flex w-full sm:col-span-1 sm:items-center sm:justify-center md:col-span-2 md:items-end md:justify-end"
-		>
+			class="flex w-full sm:col-span-1 sm:items-center sm:justify-center md:col-span-2 md:items-end md:justify-end">
 			<input
 				class="h-12 border-gray-100 bg-gray-200 text-gray-100 sm:w-full md:w-6/12"
 				type="text"
